@@ -15,7 +15,7 @@ Un sitio web interactivo que presenta una colección de historias oscuras y surr
 
 ## Estructura del sitio
 
-- `uepa.html` - Página de inicio
+- `index.html` - Página de inicio
 - `cuentos.html` - Hub central de historias
 - `autores.html` - Información sobre los autores
 - `galeria.html` - Galería de imágenes
