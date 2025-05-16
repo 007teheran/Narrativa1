@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lo Oscuro Del Ser</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: url('fondo_1.jpg') no-repeat center top fixed;
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: relative;
+      background-color: black;
+    }
+
+    #overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.9;   
+      transition: opacity 0.3s ease;
+    }
+    .nav-bar {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(4px);
+      position: relative;
+      z-index: 1;
+    }
+
+    .nav-button {
+      background-color: #FFD700;
+      color: #000;
+      border: none;
+      padding: 12px 24px;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      text-decoration: none;
+    }
+
+    .nav-button:hover {
+      background-color: #e5c100;
+    }
+
+    .main-container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(8px);
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+      position: relative;
+      z-index: 1;
+    }
+
+    .main-container h1 {
+      text-align: center;
+      color: #FFD700;
+      font-size: 48px;
+      margin-bottom: 30px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.8s ease-out;
+    }
+
+    .text-content {
+      text-align: justify;
+      line-height: 1.8;
+      font-size: 18px;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .floating-button {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background-color: #FFD700;
+      color: #000;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      transition: background 0.3s ease;
+      z-index: 2;
+    }
+    .floating-button2 {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #FFD700;
+      color: #000;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      transition: background 0.3s ease;
+      z-index: 2;
+    }
+    .floating-button:hover {
+      background-color: #e5c100;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="overlay"></div>
+
+  <div class="main-container">
+    <h1 class="fade-in">Lo Oscuro del Ser</h1>
+    <div class="text-content">
+      <p class="fade-in">Verás que nunca he detestado la oscuridad, desde que tengo memoria, han habido cientos y cientos de ocasiones en los que ella ha sido mi única acompañante, cuando ningún Dios respondía, ella estaba presente, observándome impasible, inamovible.</p>
+      <p class="fade-in">Comencé a observarla de vuelta, ella en toda su gracia y tenebrosidad me generaba una sensación resbaladiza por toda mi columna vertebral, un escalofrío letal que me congelaba y daba vueltas por mi cabeza. No sabría cómo describirlo más que como esa sensación que me daba vida. Me hacía sentir algo, finalmente algo, entre todo el blanco y negro de la vida.</p>
+      <p class="fade-in">Mirándola sentía pasar las horas, a veces días, semanas, incluso meses, no tenía sentido el tiempo que pasaba sin transcurrir, veía detenido el reloj y a ti ahí, tan fulminante, siempre tan fulminantes como esos dos orbes brillantes presentes en lo más alto de tu presencia.</p>
+      <p class="fade-in">Buscarte antes de despertar se me hizo costumbre, sin importarme que casi ninguna vez pudiera encontrarte, ¿Sabes? Era parte de esa rutina, rutina repetitiva, rutina eterna, rutina sin frutos. Más tarde que temprano descubrí una verdad, los momentos en los que aparecías frente a mí.</p>
+      <p class="fade-in">Tus pesadillas tienen un campo especial en mi cabeza, un huequito en el que prosperan y crecen. Todos los recuerdo con especial detalle. Con mucho, especial, detalle. Entre ellos, uno, en el río que se encontraba cerca de mi casa, recuerdo el ruido molesto de la corriente chocando con las rocas, el olor a cerdo a la leña, el intenso rojo que salía del inerte cuerpo de mi hermana, el frío primer contacto que tuve con su cuerpo.</p>
+      <p class="fade-in">Recuerdo ya haber visto esto. Ahí estabas tú. Espera, ya no te veo. No, esto no es un sueño. Tú estabas justo ahí. Tu presencia provocó esto, siempre ocurre. Siempre. Siempre. Te miro y luego ocurren este tipo de cosas. Siempre despertaba empapado, no importaba que hiciera seguía ocurriendo.</p>
+      <p class="fade-in">Te comencé a detestar. Siempre has sido tú, esa oscuridad provoca todo este desastre. Me has dejado como el responsable, y a pesar de todo me juzgas al encontrarnos. Claro, yo la empujé, pero yo no quería, fue tu influencia. Nadie me cree cuando lo cuento, admito, no es una defensa irrefutable, pero es la realidad. No fui yo.</p>
+      <p class="fade-in">Me queda remontarme a la última pesadilla que tuve, la cual tuvo de protagonista a otra niña, recuerdo muy bien todo el espacio, el calor en la sala, el suave tacto de su piel con la mía. Tus brillantes clisos. Esta vez te pasaste, no lo puedo creer. Cuando dejo mi vida en tu yugo, me siento como brincando de sueño en sueño.</p>
+      <p class="fade-in">Te vuelvo a ver, estamos en un juzgado, entre todo el jurado destacas con tu opacante presencia. En verdad no tenías por qué venir, después de todo, esto es tu culpa. Pero claro, siempre soy yo el malo. Desapareciste. No habías hecho eso nunca. Apareces encorvado en tu gran figura, nunca te había visto de tan cerca.</p>
+      <p class="fade-in">Despierto por el alguacil haciendo sonar los barrotes, me va a llevar al juicio. Me termino de despertar y lo acompaño. Voy tranquilo, después de todo no fui yo. Fue la oscuridad.</p>
+    </div>
+  </div>
+
+  <a href="cuentos.html" class="floating-button">Volver al Hub</a>
+  <a href="historia_isa.html" class="floating-button2">Siguiente Historia</a>
+
+  <script>
+    const overlay = document.getElementById('overlay');
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      const maxScroll = 300;
+      const opacity = Math.max(0.9 - scrollY / maxScroll, 0);
+      overlay.style.opacity = opacity;
+    });
+
+    const fadeElements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.classList.add('visible');
+            entry.target.style.transitionDelay = `${index * 0.2}s`;
+            observer.unobserve(entry.target);
+          }, 50);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    fadeElements.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

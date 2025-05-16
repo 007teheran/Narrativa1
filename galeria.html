@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeria</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+    }
+
+    .container {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 64px;
+      color: #FFD700;
+      margin-bottom: 40px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .gallery a {
+      display: block;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery a:hover {
+      transform: scale(1.05);
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .nav-bar {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      background-color: #111;
+    }
+
+    .nav-button {
+      background-color: #FFD700;
+      color: #000;
+      border: none;
+      padding: 12px 24px;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .nav-button:hover {
+      background-color: #e5c100;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav-bar">
+    <a href="uepa.html" class="nav-button">Inicio</a>
+    <a href="cuentos.html" class="nav-button">Historias</a>
+    <a href="autores.html" class="nav-button">Autores</a>
+  </div>
+
+  <div class="container">
+    <h1>Galeria</h1>
+    <div class="gallery">
+        <img src="fondo_1.jpg" alt="Historia 1" />
+      </a>
+        <img src="sombras.jpg" alt="Historia 3" />
+      </a>
+        <img src="heroe.jpg" alt="Historia 2" />
+      </a>
+    </div>
+  </div>
+</body>
+</html>

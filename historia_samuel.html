@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sueños Poco Agradables</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: url('fondo_1.jpg') no-repeat center top fixed;
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: relative;
+      background-color: black;
+    }
+
+    #overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.6;
+      transition: opacity 0.3s ease;
+    }
+    .nav-bar {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(4px);
+      position: relative;
+      z-index: 1;
+    }
+
+    .nav-button {
+      background-color: #FFD700;
+      color: #000;
+      border: none;
+      padding: 12px 24px;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      text-decoration: none;
+    }
+
+    .nav-button:hover {
+      background-color: #e5c100;
+    }
+
+    .main-container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(8px);
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+      position: relative;
+      z-index: 1;
+    }
+
+    .main-container h1 {
+      text-align: center;
+      color: #FFD700;
+      font-size: 48px;
+      margin-bottom: 30px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.8s ease-out;
+    }
+
+    .text-content {
+      text-align: justify;
+      line-height: 1.8;
+      font-size: 18px;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .floating-button {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background-color: #FFD700;
+      color: #000;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      transition: background 0.3s ease;
+      z-index: 2;
+    }
+    .floating-button2 {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #FFD700;
+      color: #000;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      transition: background 0.3s ease;
+      z-index: 2;
+    }
+    .floating-button:hover {
+      background-color: #e5c100;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main-container">
+    <h1 class="fade-in">El cientifico del año</h1>
+    <div class="text-content">
+      <p class="fade-in">Siempre que paso por momentos llenos de estrés o frustrantes ocurre lo mismo: Despierto en un inmenso laboratorio lleno de botellas burbujeantes, robots con batas de laboratorio y carteles que decían:</p>
+      <p class="fade-in">"Premio Nobel al Papá Científico del Año".</p>
+      <p class="fade-in">Me miraba al espejo y notaba que llevaba una bata blanca y unos lentes de protección gigantescos que casi me tapaban la cara. En mis manos, sostenía una probeta que parecía vibrar como si estuviera llena de burbujas impacientes.</p>
+      <p class="fade-in">—¡Profesor Carlitos! —me llamaba aquella voz familiar. Era Camila, pero llevaba una bata aún más grande que ella y sostenía un megáfono—. ¡Todos están esperando tu gran experimento!</p>
+      <p class="fade-in">Antes de que pudiera responder, me empujaban al centro de un escenario lleno de científicos que me aplaudían como si fuera una estrella de rock. Sobre la mesa había una enorme maqueta de un volcán... pero esta vez parecía una montaña rusa, llena de tubos conectados por todos lados.</p>
+      <p class="fade-in">—Papá, tienes que activar la "Reacción Volcánica Increíble" —dijo Camila, emocionada.</p>
+      <p class="fade-in">—¿La qué? — siempre preguntaba, sintiendo que el pánico me invadía.</p>
+      <p class="fade-in">Siempre decidido a no decepcionar apretaba aquel botón rojo con un letrero que decía: "NO PRESIONAR BAJO NINGUNA CIRCUNSTANCIA". Al instante, el volcán empezó a temblar y a soltar burbujas de colores.</p>
+      <p class="fade-in">—¡Papá, creo que pusiste demasiada espuma cósmica! —gritó</p>
+      <p class="fade-in">Camila mientras la espuma comenzaba a elevarse como una nube gigante. De repente, el volcán me lanzaba por el aire, y mientras volaba, notaba que la espuma se convertía en una alfombra voladora. Ahora, surcaba el laboratorio mientras los robots intentaban atraparme con redes hechas de burbujas. Finalmente, la alfombra de espuma se deshizo, y aterrizaba de cara en una pila de almohadas, mientras Camila y los científicos me aplaudían.</p>
+      <p class="fade-in"> —¡Papá, eres el científico más épico del mundo! —dijo Camila, orgullosa.</p>
+      <p class="fade-in">Justo en ese momento, Siempre despierto, la primera vez que lo viví estaba en mi cama con Camila sacudiendo mi hombro, Tenía problemas en mi trabajo y por esos días también fue su feria de ciencias, me regaló parte del cordón con el que venía aquella medalla que ganó gracias a su experimento, ahora lo uso de manilla y cada que me siento frustrado lo tocó y me tranquilizo, espero que en un día cómo hoy no termine arrancando.</p>
+    </div>
+  </div>
+<a href="historia_isa.html" class="floating-button">Historia Anterior</a>
+  <a href="cuentos.html" class="floating-button2">Volver al Hub</a>
+
+  <script>
+    const overlay = document.getElementById('overlay');
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      const maxScroll = 300;
+      const opacity = Math.max(0.6 - scrollY / maxScroll, 0);
+      overlay.style.opacity = opacity;
+    });
+
+    const fadeElements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.classList.add('visible');
+            entry.target.style.transitionDelay = `${index * 0.2}s`;
+            observer.unobserve(entry.target);
+          }, 50);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    fadeElements.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
+
+ 
