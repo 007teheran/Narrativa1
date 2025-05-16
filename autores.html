@@ -32,21 +32,31 @@
       margin: 0 auto;
     }
 
-    .gallery a {
-      display: block;
+    .card {
       border-radius: 12px;
       overflow: hidden;
       transition: transform 0.3s ease;
     }
 
-    .gallery a:hover {
+    .card:hover {
       transform: scale(1.05);
     }
 
-    .gallery img {
+    .card img {
       width: 100%;
       height: auto;
       display: block;
+      border-radius: 12px;
+    }
+
+    .card h2 a {
+      color: #FFD700;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .card h2 a:hover {
+      color: #e5c100;
     }
 
     .nav-bar {
@@ -74,29 +84,84 @@
     .nav-button:hover {
       background-color: #e5c100;
     }
+
+    .author-section {
+      padding: 60px 30px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .author-section h3 {
+      font-size: 32px;
+      color: #FFD700;
+      margin-bottom: 20px;
+    }
+
+    .author-section p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
   </style>
 </head>
 <body>
+
   <div class="nav-bar">
     <a href="index.html" class="nav-button">Inicio</a>
     <a href="cuentos.html" class="nav-button">Historias</a>
-     <a href="galeria.html" class="nav-button">Galeria</a>
+    <a href="galeria.html" class="nav-button">Galería</a>
   </div>
 
   <div class="container">
     <h1>Integrantes</h1>
     <div class="gallery">
-      <a href="historia_santiago.html">
-        <img src="santi.jpg" alt="Historia 1" />
-        <h1>Santiago</h1>
-      </a>
-      <a href="historia_isa.html">
-        <img src="comico.jpg" alt="Historia 3" />
-      </a>
-      <a href="historia_samuel.html">
-        <img src="heroe.jpg" alt="Historia 2" />
-      </a>
+      <div class="card">
+        <img src="santi.jpg" alt="Santiago" />
+        <h2><a href="#santiago">Santiago</a></h2>
+      </div>
+      <div class="card">
+        <img src="heroe.jpg" alt="Samuel" />
+        <h2><a href="#samuel">Samuel</a></h2>
+      </div>
+      <div class="card">
+        <img src="heroe.jpg" alt="Emanuel" />
+        <h2><a href="#emanuel">Emanuel</a></h2>
+      </div>
+      <div class="card">
+        <img src="heroe.jpg" alt="Daniel" />
+        <h2><a href="#daniel">Daniel</a></h2>
+      </div>
+      <div class="card">
+        <img src="heroe.jpg" alt="Isabella" />
+        <h2><a href="#isabella">Isabella</a></h2>
+      </div>
     </div>
   </div>
+
+  <div id="santiago" class="author-section">
+    <h3>Santiago</h3>
+    <p>Aquí va la biografía o descripción de Santiago.</p>
+  </div>
+
+  <div id="samuel" class="author-section">
+    <h3>Samuel</h3>
+    <p>Aquí va la biografía o descripción de Samuel.</p>
+  </div>
+
+  <div id="emanuel" class="author-section">
+    <h3>Emanuel</h3>
+    <p>Aquí va la biografía o descripción de Emanuel.</p>
+  </div>
+
+  <div id="daniel" class="author-section">
+    <h3>Daniel</h3>
+    <p>Aquí va la biografía o descripción de Daniel.</p>
+  </div>
+
+  <div id="isabella" class="author-section">
+    <h3>Isabella</h3>
+    <p>Aquí va la biografía o descripción de Isabella.</p>
+  </div>
+
 </body>
 </html>
