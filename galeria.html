@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Galeria</title>
+  <title>Galería</title>
   <style>
     body {
       margin: 0;
@@ -32,21 +32,16 @@
       margin: 0 auto;
     }
 
-    .gallery a {
-      display: block;
-      border-radius: 12px;
-      overflow: hidden;
-      transition: transform 0.3s ease;
-    }
-
-    .gallery a:hover {
-      transform: scale(1.05);
-    }
-
     .gallery img {
       width: 100%;
       height: auto;
       display: block;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
     }
 
     .nav-bar {
@@ -68,11 +63,31 @@
       cursor: pointer;
       transition: background 0.3s ease;
       text-decoration: none;
-      text-align: center;
     }
 
     .nav-button:hover {
       background-color: #e5c100;
+    }
+
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 800px;
+      margin: 40px auto;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      border-radius: 12px;
     }
   </style>
 </head>
@@ -84,15 +99,28 @@
   </div>
 
   <div class="container">
-    <h1>Galeria</h1>
+    <h1>Galería</h1>
     <div class="gallery">
-        <img src="fondo_1.jpg" alt="Historia 1" />
-      </a>
-        <img src="sombras.jpg" alt="Historia 3" />
-      </a>
-        <img src="heroe.jpg" alt="Historia 2" />
-      </a>
+      <img src="fondo_1.jpg" alt="Historia 1" />
+      <img src="sombras.jpg" alt="Historia 3" />
+      <img src="comico.jpg" alt="Historia 2" />
+      <img src="sombra_juicio.jpg" alt="Historia 4" />
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Trabajos anteriores</h1>
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/sH9r5F1ewbA?si=U_M1xVohF-LTuDbY"
+              title="Video 1"
+              allowfullscreen></iframe>
+    </div>
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/YSLZFW1we8s"
+              title="Video 2"
+              allowfullscreen></iframe>
     </div>
   </div>
 </body>
 </html>
+
