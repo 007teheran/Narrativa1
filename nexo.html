@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sueños Poco Agradables</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: relative;
+      background-color: black;
+    }
+
+    #overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.6;
+      transition: opacity 0.3s ease;
+    }
+    .nav-bar {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(4px);
+      position: relative;
+      z-index: 1;
+    }
+
+    .nav-button {
+      background-color: #FFD700;
+      color: #000;
+      border: none;
+      padding: 12px 24px;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      text-decoration: none;
+    }
+
+    .nav-button:hover {
+      background-color: #e5c100;
+    }
+
+    .main-container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(8px);
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+      position: relative;
+      z-index: 1;
+    }
+
+    .main-container h1 {
+      text-align: center;
+      color: #FFD700;
+      font-size: 48px;
+      margin-bottom: 30px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.8s ease-out;
+    }
+
+    .text-content {
+      text-align: justify;
+      line-height: 1.8;
+      font-size: 18px;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .floating-button {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background-color: #FFD700;
+      color: #000;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      transition: background 0.3s ease;
+      z-index: 2;
+    }
+    .floating-button2 {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #FFD700;
+      color: #000;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      transition: background 0.3s ease;
+      z-index: 2;
+    }
+    .floating-button:hover {
+      background-color: #e5c100;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main-container">
+    <h1 class="fade-in">Un Juicio un tanto extraño</h1>
+    <div class="text-content">
+      <p class="fade-in">El estrado flotaba entre la niebla, sin techo ni paredes, solo un eco repitiendo mis pensamientos. Nadie sabía cómo había llegado ahí. Era un juicio extraño, como un sueño lúcido. Cada involucrado hablaba desde su propio estrado suspendido en el aire, culpando a sus sueños. Un hombre, con una bata manchada de “espuma cósmica”, decía ser un Nobel de Ciencias, pero en realidad era el padre de la víctima: una joven que no levantaba la mirada, aferrada a una linterna como único refugio de las voces que la perseguían. En una esquina oscura, otro hombre murmuraba que la culpa era de la oscuridad, señalando siempre el mismo rincón y repitiendo: “fue ella, siempre fue ella”. Nadie entendía qué pasaba. El juez no buscaba justicia, sino la verdad detrás de esas pesadillas que parecían haberse materializado. No era un juicio normal. Lo supe al entrar, pero fue al escuchar los testimonios cuando lo entendí por completo.</p>
+</div>
+  </div>
+<a href="historia_samuel.html" class="floating-button">Historia anterior</a>
+  <a href="final_santi.html" class="floating-button2">Continua tu historia</a>
+
+  <script>
+    const overlay = document.getElementById('overlay');
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      const maxScroll = 300;
+      const opacity = Math.max(0.6 - scrollY / maxScroll, 0);
+      overlay.style.opacity = opacity;
+    });
+
+    const fadeElements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.classList.add('visible');
+            entry.target.style.transitionDelay = `${index * 0.2}s`;
+            observer.unobserve(entry.target);
+          }, 50);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    fadeElements.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
