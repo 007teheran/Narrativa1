@@ -24,6 +24,11 @@
       margin-bottom: 40px;
     }
 
+    h2 {
+      font-size: 25px;
+      color: #fff;
+    }
+
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -78,7 +83,6 @@
       cursor: pointer;
       transition: background 0.3s ease;
       text-decoration: none;
-      text-align: center;
     }
 
     .nav-button:hover {
@@ -98,13 +102,34 @@
       margin-bottom: 20px;
     }
 
-.author-section p {
-  font-size: 18px;
-  line-height: 1.8;
-  margin-bottom: 20px;
-}
+    .author-section p {
+      font-size: 18px;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
 
-</style>
+    .credits-section {
+      padding: 60px 30px;
+      max-width: 900px;
+      margin: 60px auto;
+      text-align: left;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+    }
+
+    .credits-section h2 {
+      font-size: 32px;
+      color: #FFD700;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .credits-section p {
+      font-size: 18px;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 <body>
 
@@ -134,7 +159,7 @@
         <h2><a href="#daniel">Daniel</a></h2>
       </div>
       <div class="card">
-        <img src="isa.jpg" alt="Isabella" />
+        <img src="isa.jpg" alt="Isabela" />
         <h2><a href="#isabela">Isabela</a></h2>
       </div>
     </div>
@@ -145,26 +170,22 @@
   <h3>Santiago</h3>
 
   <p><strong>Hola, soy Santi</strong>, escritor de “Lo Oscuro del Ser” y del final (x). Si estás leyendo esto, probablemente seas chismoso, lo cual respeto. Chismear sobre gente que uno no conoce es una experiencia enriquecedora... si así lo quieres ver. Gracias por leer lo que escribimos, ¡un beso digital!</p>
-
   <p><strong>¿Quién soy?</strong> Te contaré con base en algunos aspectos personales:</p>
-
   <p><strong>Gustos:</strong> Soy fan de Nintendo y la animación. Mi juego favorito es <em>Phoenix Wright: Ace Attorney</em>, que me enseñó mucho sobre narrativa y gameplay. También amo las series adolescentes como <em>Aprendiendo a Vivir</em>, y mi película favorita es <em>Yo, Adolescente</em>, que me genera una sensación de confort especial.</p>
-
   <p><strong>Hobbies:</strong> Me gusta leer, ver pelis/series, jugar videojuegos, pero sobre todo escuchar música y escribir. Escribir me ayuda a procesar emociones. Es una forma de soltar todo, acompañado de buena música.</p>
-
   <p><strong>Personalidad:</strong> Necesito "agarrar vuelo" para mostrarme como soy. No me considero introvertido, pero sí reservado. Prefiero no hablar si no tengo algo valioso que decir. Hay suficiente ruido en el mundo.</p>
-
   <p><strong>Valores:</strong> Creo en la honestidad, el trabajo duro e inteligente. Aunque antes creía en el karma, ahora soy más realista: a veces a la gente mala le va bien. Por eso, en mis historias, los personajes injustos reciben lo que merecen (aunque no siempre me siento cómodo con todos los finales).</p>
-
   <p><strong>Experiencias:</strong> Mi hogar ha sido un espacio seguro, pero crecer fue difícil. Siempre fui objeto de burlas, aunque de niño no me importaba tanto. Con el tiempo, los comentarios dolían más. Durante la cuarentena encontré refugio online, pero seguía siendo atacado. Por suerte, siempre tuve personas hermosas cerca.</p>
-
   <p>He aprendido a ser selectivo con quien soy. No todos merecen mi versión auténtica, y eso está bien. La vida duele, pero siempre hay razones para seguir. Y si no las hay, hay que inventarlas. Me definen muchas frases cliché... pero son reales. Me siento orgulloso de quién soy y de lo que viví: eso es lo que me permite crear arte hoy.</p>
 </div>
-
-
   <div id="samuel" class="author-section">
     <h3>Samuel</h3>
-    <p>Aquí va la biografía o descripción de Samuel.</p>
+    <p>Hola, me llamo <strong>Samuel</strong> escritor de  “¿catarsis?”  y te diré algunos aspectos sobre mí:</p>
+    <p>Me gustan los videojuegos, las películas y la mayoría de productos de entretenimiento actuales, Algunas de mis sagas favoritas son red dead redemption, GTA y zelda, es difícil para mí elegir una película o género de películas en específico, así que optaré por decir que sí es entretenida o tiene una buena historia me conformo, de igual manera disfruto bastante de la compañía de buenos amigos o mis familiares más queridos.</p>
+    <p><strong> Mis hobbies son: </strong> Jugar videojuegos, ver películas, escuchar música, leer, y trotar.</p>
+    <p>Me considero una persona extrovertida, no se me complica hablar y conocer nuevas personas, me gusta ser cordial con las demás personas y molestar con mis amigos cercanos y familiares.
+    <p>Creo mucho en la lealtad hacía tus allegados, el respeto y responsabilidad con los demás, valorar tu tiempo de vida y disfrutar de buenos momentos.</p>
+    </p>
   </div>
 
   <div id="emanuel" class="author-section">
@@ -174,14 +195,31 @@
 
   <div id="daniel" class="author-section">
     <h3>Daniel</h3>
-    <p>Aquí va la biografía o descripción de Daniel.</p>
+    <p>Hola, me presento soy <strong>Daniel</strong> oriundo de Medellín, soy el programador de esta página web y escritor del super nexo de estas historias, para presentarme en pocas palabras diría que soy un joven al cual le gustan mucho los videojuegos, los deportes y todo lo que tenga que ver con producciones audiovisuales y programación.</p>
+    <p>Mis inspiraciones o modelos a seguir puedo llegar a decir que son mis padres y mis abuelos que significan todo para mi, a lo largo de mi vida he hecho demasiadas cosas que nunca terminó o llegó a abandonar por aburrimiento, ejemplos de esto puede ser que practique 3 meses taekwondo, practique 9 años natación, estudie ingles aprox unos 6 años, estuve en cursos de robótica, en fin cada cierto tiempo voy emigrando de actividad.</p>
+    <p>Algunos de mis gustos o hobbies puede ser cocinar, ver series en especial las de epoca y asi flow de vikingos, las películas románticas me encantan, escuchar música, algunos de mis géneros favoritos pueden ser así flow indie, el regional mexicano, el pop o mejor dicho un poquito de todo y mi cantante favorita es Nicki Nicole, mi juego favorito de todos los tiempos es el Minecraft pero también disfruto mucho de los shooters , mis sagas favoritas de películas son Harry Potter y Star Wars y asi mi favorita de siempre es Cars 1.</p>
+    <p>Para finalizar decir que gracias por tomarse el tiempo de leer esto y espero que hayan disfrutado de las historias que se hicieron con mucho cariño ♥ ️.</p>
   </div>
 
   <div id="isabela" class="author-section">
     <h3>Isabela</h3>
-    <p>Aquí va la biografía o descripción de Isabella.</p>
+    <p>Hola, me llamo <strong> Isabela </strong>, pero me gusta más que me digan Isa (así no me siento regañada). Soy la escritora de “El túnel sin nombre”. Desde muy pequeña he encontrado un gran gusto por la escritura, es como mi escape, mi lugar seguro. Me gusta narrar por medio de las letras, lo que me dificulta narrar con mi voz. Así que disfruté mucho el proceso de escribir esta historia. Además de escribir, también he encontrado gusto por los deportes y el arte, practiqué natación desde mis 5 años hasta los 11 años, ganando varios campeonatos entre ellos: Final departamental de Intercolegiados y la Baby Natación. Luego a mis 12 años decidí cambiarme al tenis de campo, deporte que practico hasta ahora y me hace demasiado feliz, en el transcurso de este tiempo, también he ganado varios campeonatos: G2, G3 (son torneos nacionales realizados por la Federación Colombiana de Tenis) y el más importante para mi la Baby Tenis. Ahora mi mayor meta es representar a la universidad en unos juegos universitarios y ganar una medalla. Como te mencione anteriormente, también encuentro un gusto enorme por el arte, en mis tiempos libres me gusta tocar piano, hacerlo me hace escapar del mundo por un momento y así poder silenciar mis pensamientos por un momento. </p>
+    <p>Siempre me ha gustado ser una persona activa, y me gusta saber de todo un poquito, así que, no solo he practicado deportes, también he participado en concursos de oratoria, Modelo de Naciones Unidas, me gusta asistir a foros, el último que recuerdo trataba sobre el nexus entre la inteligencia emocional, espiritual y artificial. Mis padres desde pequeña me enseñaron a ser una persona íntegra y el tener la fortuna de poder participar en todas estas experiencias me ha ayudado a forjar mi carácter, a ser fuerte, pero también a pedir ayuda cuando lo necesito, a ser amigable y comprensiva con los demás. Una frase que he llevado conmigo durante toda mi vida es <strong>“Da siempre lo mejor de ti, no sabes si va a existir un mañana”</strong></p>
+    <p>Por último, no importa lo que hagan en sus vidas, siempre actúen de buena manera y  recuerden que la vida tiene muchas opciones, escojan siempre lo que los hace felices, así estarán seguros de que es la opción correcta.</p>
+    <p>Gracias por llegar hasta acá.</p>
   </div>
 
+ <div class="credits-section">
+      <h2>Agradecimientos</h2>
+
+<p><strong>Samuel:</strong> Agradezco de antemano a mis papás por darme la oportunidad de estudiar una carrera que contengan este tipo de cursos que me gustan, a mis compañeros por acompañarme en un nuevo momento de mi vida, y haber realizados trabajos en los cuales me divertí bastante en este grupo “faro dieck”, y gracias a la mejor profe del mejor curso ;</p>
+<p><strong>Santiago:</strong> Le agradezco a mis padres, a mis amigos, con especial aludido a mi amiga Laura y Mariam Salomé. También agradezco a lyragamer, adricarra y a YouTube.</p>
+<p><strong>Isabela:</strong> Le agradezco a mis amigos que hacen todo este proceso más divertido, a mi hermana que siempre me apoya y me escucha cuando estoy en crisis existenciales, a chat gpt que resuelve mis dudas (utilicen las IA con responsabilidad). Y a mi padre que hace posible que esté en la universidad. </p>
+<p><strong>Daniel:</strong> Quisiera agradecer a spotify por ser mi compañía durante este proceso de escritura y de programación, a chat gpt por ayudarme con la página web resolviendo los bugs que tanto me costaba a mí resolver, a mis compañeros en especial a santiago por ser de gran apoyo al momento del diseño y obvio a mis padres y a diosito 🙏🏻.</p>
+<p><strong>Emanuel:</strong> Quiero agradecerle a mi familia por estar siempre para mí, por su apoyo en los momentos difíciles y por darme la fuerza para seguir adelante. Gracias por confiar en mí y acompañarme en este camino.</p>
+<p>También agradezco a mis amigos, que han hecho más fácil el proceso de estudiar y crear proyectos. Gracias por su ayuda, su compañía y por estar ahí cuando los he necesitado.</p>
+</div>
 </body>
 </html>
+
 
